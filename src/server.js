@@ -11,6 +11,6 @@ server.use(routes);
 require("dotenv").config();
 require("./database/database");
 
-server.listen(3333, () => {
+server.listen(process.env.PORT || 3333, () => {
   console.log("Server ON ;)");
 });
